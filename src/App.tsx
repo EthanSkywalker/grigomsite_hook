@@ -1,13 +1,22 @@
-import React from 'react';
+import { Route, Routes } from "react-router-dom";
 import './App.css';
-import AppRouter from './AppRouter';
-import Navigation from './components/navigation/Navigation';
+import './components/layout/Layout.css';
+import './components/videos/Videos.css'
+import Company from "./components/company/Company";
+import Home from './components/home/Home';
+import Layout from "./components/layout/Layout";
+import Videos from "./components/videos/Videos";
 
-function App() {
+
+const App = () => {
   return (
-    <>
-      <AppRouter/>
-    </>
+    <Routes>
+      <Route path='/' element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path='/videos' element={<Videos />} />
+        <Route path='company' element={<Company />} />
+      </Route>
+    </Routes>
   );
 }
 

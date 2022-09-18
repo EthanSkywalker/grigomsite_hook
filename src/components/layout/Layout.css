@@ -1,0 +1,40 @@
+.header-container {
+    background-color: lavender;
+    overflow-x      : hidden;
+    height          : 70px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+}
+
+.header-div {
+    width          : 1300px;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.header-logo {
+    font-weight: bold;
+    font-size  : 35px;
+}
+
+.header-nav {
+    font-size: 20px;
+}
+
+.header-info {
+    display  : flex;
+    font-size: 20px;
+}
+
+.header-info>div {
+    padding: 10px;
+}
+
+.header-nav>nav>a {
+    color          : black;
+    font-weight    : bold;
+    text-decoration: none;
+    padding         : 15px;
+}
